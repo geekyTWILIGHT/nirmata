@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Page</title>
+</head>
+<body>
+  <h1>Displaying Text</h1>
+  <p id="displayText"></p>
+  <a href="#" id="linkToTextPage">Go back to Form Page</a>
+  <a href="page3.html">Go to Page 3</a>
+
+  <script>
+    // Retrieve the stored text value from localStorage
+    var userText = localStorage.getItem("userText");
+    
+    // Display the text value as a clickable link
+    var displayTextElement = document.getElementById("displayText");
+    var linkElement = document.createElement("a");
+    linkElement.href = userText; // Use the stored text value as the link destination
+    linkElement.textContent = userText; // Display the stored text value as the link text
+    displayTextElement.appendChild(linkElement);
+    
+    // Link to the Form Page
+    document.getElementById("linkToTextPage").href = "index.html";
+  </script>
+</body>
+</html>
