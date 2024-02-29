@@ -1,3 +1,3 @@
-nirmata.vercel.app
+nirmataex.vercel.app
 
 # nirmata
