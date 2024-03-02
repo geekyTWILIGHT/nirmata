@@ -1,0 +1,126 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Loading Page */
+
+.load-page {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.load-page > .titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    gap: 1.25vw;
+    margin-left: 77.5vw;
+    margin-top: 80vh;   
+}
+
+.load-page > .titles > .website > #web-name {
+    font-size: 3.5rem;
+    color: #0d0d0d;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.load-page > .titles > .website > #tagline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.load-page > .titles > .website > #tagline > span {
+    font-size: .925rem;
+    color: #0d0d0d;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-style: normal; 
+}
+
+.load-page > .titles > .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-page > .titles > .loading > #load_icon {
+    width: 65px;
+    height: 65px;
+    rotate: 0deg;
+    position: relative;
+    animation: rotateLoad 1.75s ease infinite;
+}
+
+@keyframes rotateLoad {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8.5vh;
+    width: 100%;
+    background-color: #0d0d0d;;
+}
+
+.nav-bar > .logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.nav-bar > .logo > img {
+    width: 125px;
+    height: 55px;
+    margin-left: 6%;
+    font-style: italic;
+    color: #fff;
+}
+
+.nav-bar > .nav-links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-right: 25%;
+}
+
+.nav-bar > .nav-links > a {
+    font-size: 1rem;
+    color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/* Footer */
