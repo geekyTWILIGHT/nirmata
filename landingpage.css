@@ -6,8 +6,11 @@
     text-decoration: none;
 }
 
-/* Loading Page */
+body {
+    overflow: hidden;
+}
 
+/* Loading Page */
 .load-page {
     position: absolute;
     display: flex;
@@ -16,6 +19,7 @@
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    z-index: 100;
 }
 
 .load-page > .titles {
