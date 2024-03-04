@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/486b0c87a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact-us.css">
+    <title>Nirmata</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="" alt="logo" onclick="toLandingpage()">
+        </div>
+        <div class="nav-links">
+            <a id="product" onclick="moveToProducts()">Product</a>
+            <a id="contact" onclick="moveToContactsPage()">Contact</a>
+            <a id="about" onclick="moveToAboutPage()">About</a> 
+        </div>
+    </nav>
+
+    <!-- Contents -->
+    <div class="contact-us-container">
+        <div class="contact-us">
+            <div class="informations">
+                <p id="title">Connect with Nirmata</p>
+                <span class="connect-line"></span>
+                <p class="temp-sub-head">
+                    Lorem ipsum:
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+                <p class="temp-sub-head">
+                    Duis aute irure
+                </p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                </p>
+            </div>
+            <form class="contact-forms">
+                <div class="name-email-suptype">
+                    <div class="name-form">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="email-form">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="support-type-form">
+                        <label for="supType">Support Type*</label>
+                        <div class="supType-choose">
+                            <select id="supType" name="supportType">
+                                <option value="" disabled selected>Select</option>
+                                <option value="technical supprot">Technical Support</option>
+                                <option value="shipping inquiry">Shipping Inquiry</option>
+                                <option value="returns and refunds">Return and Refunds</option>
+                                <option value="others">Others</option>
+                            </select>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-form">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" ></textarea>
+                </div>
+                <div class="files-upload">
+                    <label for="fileUpload" class="file-upload-label">
+                        <i class="fa-solid fa-images"></i>
+                        <input type="file" id="fileUpload" name="fileUpload" accept=".jpg, .jpeg, .png" required>
+                    </label>
+                    <span>(jpg/jpeg and png files only)</span>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="links">
+            <div class="website">
+                <div class="logo">
+                    <img id="logo" src="" alt="logo" onclick="toLandingpage()">
+                </div>
+                <div class="details">
+                    <p id="address">Location: STI College Novaliches, Quirino Highway, Novaliches, Quezon City</p>
+                    <p id="contact">Contact: 0270891803 / 09107381185</p>
+                    <p id="email">Email: <span onclick="goEmail()">nirmatacompanycorp@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="title">
+                    <p>Information</p>
+                </div>
+                <div class="links">
+                    <a onclick="moveToAboutPage()">About Us</a>
+                    <a onclick="moveToOurStoryPage()">Our Story</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="title">
+                    <p>Communication</p>
+                </div>
+                <div class="links">
+                    <a onclick="moveToContactsPage()">Contact Us</a>
+                </div>
+            </div>
+            <div class="additional-contacts">
+                <div class="links">
+                    <i class="fa-brands fa-facebook-f" onclick="goFacebook()"></i>
+                    <i class="fa-brands fa-x-twitter" onclick="goTwitter()"></i>
+                    <i class="fa-solid fa-link" onclick="copyURL()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-infos">
+            <div class="copyright">
+                <p>Copyright ©2024 Nirmata All Rights Reserved</p>
+            </div>
+            <div class="infos">
+                <a onclick="moveToPrIPoPage()">Privacy Policy</a>
+                <a onclick="moveToRePoPage()">Return Policy</a>
+                <a onclick="moveToTermsSerPage()">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="link-copied-notif">
+        <p>Link Copied!</p>
+    </div>
+    
+
+    <script src="contact-us.js"></script>
+    <script src="locationModifier.js"></script>
+</body>
+</html>
