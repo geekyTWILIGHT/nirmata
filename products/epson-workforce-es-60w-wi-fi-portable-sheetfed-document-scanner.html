@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/486b0c87a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner.css">
+    <title>Epson WorkForce ES-60W Wi-Fi Portable Sheetfed Document Scanner | Nirmata</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo" onclick="toLandingpage()">
+        </div>
+        <div class="nav-links">
+            <a id="product" onclick="toProd()">Product</a>
+            <a id="contact" onclick="toCont()">Contact</a>
+            <a id="about" onclick="toAbt() ">About</a> 
+        </div>
+    </nav>
+
+    <!-- Contents -->
+    <div class="prod-container">
+        <div class="prod">
+            <div class="prod-img-container">
+                <div class="prod-img-selec">
+                    <div class="img-1" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img1.jpg')"></div>
+                    <div class="img-2" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img2.jpg')"></div>
+                    <div class="img-3" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img3.jpg')"></div>
+                    <div class="img-4" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img4.jpg')"></div>
+                    <div class="img-5" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img5.jpg')"></div>
+                    <div class="img-6" onclick="changeImage('epson-workforce-es-60w-wi-fi-portable-sheetfed-document-scanner/img6.jpg')"></div>
+                </div>
+                <div class="prod-img">
+                    <div class="img" id="mainImageContainer"></div>
+                </div>
+            </div>
+            <div class="prod-details">
+                <div class="name-price">
+                    <p class="name">Epson WorkForce ES-60W Wi-Fi Portable Sheetfed Document Scanner</p>
+                    <p class="price">₱8,964.00</p>
+                </div>
+                <span class="sep"></span>
+                <div class="description">
+                    <p class="desc">
+                        Small, compact and lightweight, the WorkForce ES-60W is the perfect solution for on-the-go scanning needs. USB-powered and equipped with Wi-Fi access and a built-in battery, it delivers fast, convenient scanning anytime, anywhere. With an easy-to-use, intuitive scanning process, capturing and saving documents and even business cards is simply a breeze.    
+                    </p>
+                    <ul>
+                        <li>Compact size and footprint</li>
+                        <li>Powered via USB, AC Adapter or built-in battery</li>
+                        <li>Scan speed up to 4.0sec per sheet (on battery)</li>
+                        <li>Wi-Fi and Wi-Fi A/P mode connectivity</li>
+                        <li>Epson ScanSmart</li>
+                    </ul>
+                </div>
+                <div class="prod-num-pay-container">
+                    <div class="prod-num-pay">
+                        <div class="prod-num">
+                            <div class="cur-num-container">
+                                <div class="cur-num">
+                                    <p class="num" id="quantity">1</p>
+                                </div>
+                            </div>
+                            <div class="inc-dec-container">
+                                <div class="inc">
+                                    <button id="inc_btn" type="button">+</button>
+                                </div>
+                                <div class="dec">
+                                    <button id="dec_btn" type="button">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-pay-container">
+                            <button type="button" class="cart">Add to Cart </button>
+                            <button type="button" class="pay">Pay now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="links">
+            <div class="website">
+                <div class="logo">
+                    <img id="logo" src="../images/logo.png" alt="logo" onclick="toIndex()">
+                </div>
+                <div class="details">
+                    <p id="address">Location: STI College Novaliches, Quirino Highway, Novaliches, Quezon City</p>
+                    <p id="contact">Contact: 0270891803 / 09107381185</p>
+                    <p id="email">Email: <span onclick="goEmail()">nirmatacompanycorp@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="title">
+                    <p>Information</p>
+                </div>
+                <div class="links">
+                    <a onclick="toAbt()">About Us</a>
+                    <a onclick="toStry()">Our Story</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="title">
+                    <p>Communication</p>
+                </div>
+                <div class="links">
+                    <a onclick="toCont()">Contact Us</a>
+                </div>
+            </div>
+            <div class="additional-contacts">
+                <div class="links">
+                    <i class="fa-brands fa-facebook-f" onclick="goFacebook()"></i>
+                    <i class="fa-brands fa-x-twitter" onclick="goTwitter()"></i>
+                    <i class="fa-solid fa-link" onclick="copyURL()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-infos">
+            <div class="copyright">
+                <p>Copyright ©2024 Nirmata All Rights Reserved</p>
+            </div>
+            <div class="infos">
+                <a onclick="toPvyPcy()">Privacy Policy</a>
+                <a onclick="toRtnPcy()">Return Policy</a>
+                <a onclick="toTrmSrv()">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="link-copied-notif">
+        <p>Link Copied!</p>
+    </div>
+    
+    <script src="forProducts.js"></script>
+    <script src="../contents/others.js"></script>
+    <script src="../locationModifier.js"></script>
+</body>
+</html>
