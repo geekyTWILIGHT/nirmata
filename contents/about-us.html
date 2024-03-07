@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/486b0c87a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about-us.css">
+    <title>About Us | Nirmata</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo" onclick="toLandingpage()">
+        </div>
+        <div class="nav-links">
+            <a id="product" onclick="moveToProducts()">Product</a>
+            <a id="contact" onclick="moveToContactsPage()">Contact</a>
+            <a id="about" onclick="moveToAboutPage()">About</a> 
+        </div>
+    </nav>
+
+    <!-- Contents -->
+    <div class="about-us-container">
+        <div class="about-us">
+            <div class="title-container">
+                <p id="title">About Us</p>
+            </div>
+            <div class="mission-vision">
+                <div class="mission">
+                    <p id="mis_title">Our Mission</p>
+                    <span class="highlighter"></span>
+                    <p class="contents">
+                        To provide cutting-edge technology and exceptional products and services that integrate people’s daily needs, promoting convenience, sustainability and health.
+                    </p>
+                </div>
+                <div class="vision">
+                    <p id="vis_title">Our Vision</p>
+                    <span class="highlighter"></span>
+                    <p class="contents">
+                        To leverage technology to address everyday needs and improve the quality of life.
+                    </p>
+                </div>
+            </div>
+            <div class="about-contents">
+                <p id="sub_title">About Nirmata</p>
+                <span class="highlighter"></span>
+                <p class="contents">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="links">
+            <div class="website">
+                <div class="logo">
+                    <img id="logo" src="../images/logo.png" alt="logo" onclick="toLandingpage()">
+                </div>
+                <div class="details">
+                    <p id="address">Location: STI College Novaliches, Quirino Highway, Novaliches, Quezon City</p>
+                    <p id="contact">Contact: 0270891803 / 09107381185</p>
+                    <p id="email">Email: <span onclick="goEmail()">nirmatacompanycorp@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="title">
+                    <p>Information</p>
+                </div>
+                <div class="links">
+                    <a onclick="moveToAboutPage()">About Us</a>
+                    <a onclick="moveToOurStoryPage()">Our Story</a>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="title">
+                    <p>Communication</p>
+                </div>
+                <div class="links">
+                    <a onclick="moveToContactsPage()">Contact Us</a>
+                </div>
+            </div>
+            <div class="additional-contacts">
+                <div class="links">
+                    <i class="fa-brands fa-facebook-f" onclick="goFacebook()"></i>
+                    <i class="fa-brands fa-x-twitter" onclick="goTwitter()"></i>
+                    <i class="fa-solid fa-link" onclick="copyURL()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-infos">
+            <div class="copyright">
+                <p>Copyright ©2024 Nirmata All Rights Reserved</p>
+            </div>
+            <div class="infos">
+                <a onclick="moveToPrIPoPage()">Privacy Policy</a>
+                <a onclick="moveToRePoPage()">Return Policy</a>
+                <a onclick="moveToTermsSerPage()">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="link-copied-notif">
+        <p>Link Copied!</p>
+    </div>
+    
+    <script src="others.js"></script>
+    <script src="../locationModifier.js"></script>
+</body>
+</html>
